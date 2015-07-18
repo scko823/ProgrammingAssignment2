@@ -17,6 +17,7 @@ makeCacheMatrix <- function(x = matrix()) {
     getinv<- function() inv
     #give inv which is the inverse of matrix x
     list(set = set, get=get, setinv= setinv, getinv= getinv)
+    # From R help:  "Operators acting on vectors, matrices, arrays and lists to extract or replace parts." so we made a list to "point" the name of the function to the actual function, then we can use the $ operator. also putting it at the end will make it return.
 }
 
 
